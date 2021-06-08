@@ -40,20 +40,17 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-
+# start a terminal
 bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# shutdown system
-bindsym $mod+Shift+s exec -- no-startup-id shutdown now
-
 # launch firefox
 bindsym $mod+Shift+f exec --no-startup-id firefox
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym --release $mod+d exec --no-startup-id sleep 0.1 && LC_ALL=C rofi -show drun 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -182,7 +179,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+
 bar {
         status_command i3blocks
 }
