@@ -16,7 +16,8 @@ call plug#end()
 colorscheme palenight
 
 let g:airline_theme = "palenight"
-
 let g:palenight_terminal_italics=1
 
 nnoremap <C-n> :NERDTreeToggle <CR>
+
+
