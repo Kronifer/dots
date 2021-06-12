@@ -1,4 +1,8 @@
 # Colors (Konsole's Dark Pastels)
+
+window:
+  startup_mode: 'Maximized'
+
 colors:
   # Default colors
   primary:

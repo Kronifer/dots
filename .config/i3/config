@@ -60,6 +60,8 @@ bindsym --release $mod+d exec --no-startup-id sleep 0.1 && LC_ALL=C rofi -show d
 # Take a screenshot with flameshot
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui -p ~/Pictures/Screenshots
 
+bindsym $mod+Mod1+s exec --no-startup-id systemctl poweroff -i
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
